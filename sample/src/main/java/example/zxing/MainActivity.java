@@ -21,6 +21,7 @@ import androidx.fragment.app.Fragment;
 
 
 public class MainActivity extends AppCompatActivity {
+
     private final ActivityResultLauncher<ScanOptions> barcodeLauncher = registerForActivityResult(new ScanContract(),
             result -> {
                 if(result.getContents() == null) {
